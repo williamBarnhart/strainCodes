@@ -47,10 +47,10 @@ for k=1:hstep:n-hstep
         d           = zeros(numVals,1);
         G(odds,1)   = 1;
         G(evens,2)  = 1;
-        G(odds,3)   = tX;
-        G(odds,4)   = tY;
-        G(evens,5)  = tX;
-        G(evens,6)  = tY;
+        G(odds,3)   = tX-mean(tX);
+        G(odds,4)   = tY-mean(tY);
+        G(evens,5)  = tX-mean(tX);
+        G(evens,6)  = tY-mean(tY);
         d(odds)     = tDX;
         d(evens)    = tDY;
         

@@ -71,15 +71,15 @@ for k=1:5:n-5
             G(odds,1)   = 1;
             G(evens,2)  = 1;
             G(ups,3)    = 1;
-            G(odds,4)   = tX;
-            G(odds,5)   = tY;
-            G(odds,6)   = tZ;
-            G(evens,7)  = tX;
-            G(evens,8)  = tY;
-            G(evens,9)  = tZ;
-            G(ups,10)   = tX;
-            G(ups,11)   = tY;
-            G(ups,12)   = tZ;
+            G(odds,4)   = tX-mean(tX);
+            G(odds,5)   = tY-mean(tY);
+            G(odds,6)   = tZ-mean(tZ);
+            G(evens,7)  = tX-mean(tX);
+            G(evens,8)  = tY-mean(tY);
+            G(evens,9)  = tZ-mean(tZ);
+            G(ups,10)   = tX-mean(tX);
+            G(ups,11)   = tY-mean(tY);
+            G(ups,12)   = tZ-mean(tZ);
             
             
             d(odds)     = tDX;
